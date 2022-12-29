@@ -25,7 +25,6 @@ app.get('/flashcards/:id', (req: express.Request, res: express.Response) => {
 		});
 	} else {
 		const flashcard = model.getFlashcard(id);
-		console.log(flashcard);
 		if (flashcard === undefined) {
 			res.status(404).send({
 				error: true,
