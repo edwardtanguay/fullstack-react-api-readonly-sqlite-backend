@@ -68,6 +68,7 @@ export const getApiInstructions = () => {
 	<li><a href="flashcards">/flashcards</a> - all flashcards</li>
 	<li><a href="flashcards/2798">/flashcards/2798</a> - flashcard with id 2798</li>
 	<li><a href="flashcards/category/git">/flashcards/category/git</a> - all flashcards in category git</li>
+	<li><a href="categories">/categories</a> - all categories with totals</li>
 </ul>
 	`;
 }
