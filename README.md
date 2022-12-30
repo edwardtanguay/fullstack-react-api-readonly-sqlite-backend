@@ -6,11 +6,13 @@ This is an example of a fullstack app that has an API in the backend which serve
 
 ## features
 
-
 - **BACKEND**
   - Node/Express API
   - TypeScript / ES6 modules
-  - four routes: https://sqlite-readonly-backend.tkserv.eu
+  - SQLite
+    - uses [better-sqlite3](https://www.npmjs.com/package/better-sqlite3)
+    - since the SQLite database is a file, i.e. has not connection string, it has to be accessed via absolute file path, this has been tested to work on Windows, Linux and Mac, see `tools.absolutifyPathAndFileName()`
+  - four API routes: [https://sqlite-readonly-backend.tkserv.eu](https://sqlite-readonly-backend.tkserv.eu)
   - MVC structure
     - `server.ts` - responsible for req/res routes
     - `model.ts` - responsible for data functions
@@ -20,6 +22,7 @@ This is an example of a fullstack app that has an API in the backend which serve
   - Vite React
   - React Router menu
   - useContext
+  - axios
 
 ## install
 
