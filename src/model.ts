@@ -41,7 +41,7 @@ export const getFlashcardsWithCategory = (category: string): IFlashcard[] => {
 
 export const getCategories = () => {
 	const stmt = db.prepare(`
-SELECT f.category, c.name, f.total FROM (SELECT category, COUNT(*) AS total FROM flashcards GROUP BY category) as f
+SELECT f.category as categoryIdCode, c.name as categoryName, f.total FROM (SELECT category, COUNT(*) AS total FROM flashcards GROUP BY category) as f
 INNER JOIN categories AS c ON f.category = c.idCode
 ORDER BY c.name	
 	`);

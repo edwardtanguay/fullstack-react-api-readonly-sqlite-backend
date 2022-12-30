@@ -5,3 +5,9 @@ export interface IFlashcard {
 	front: string;
 	back: string;
 }
+
+export interface ICategoryItem {
+	categoryIdCode: string;
+	categoryName: string;
+	total: number;
+}
