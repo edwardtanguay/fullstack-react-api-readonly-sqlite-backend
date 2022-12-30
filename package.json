@@ -5,10 +5,10 @@
 	"type": "module",
 	"main": "index.js",
 	"scripts": {
-		"setupservice": "pm2 start --name fullstack-react-api-readonly-sqlite-backend npm -- start",
+		"setupservice": "pm2 start --name sqlite-readonly-backend npm -- start",
 		"dev": "nodemon",
 		"start": "node dist/server.js",
-		"deploy": "git pull --no-rebase && npm i && npm run build && pm2 restart fullstack-react-api-readonly-sqlite-backend",
+		"deploy": "git pull --no-rebase && npm i && npm run build && pm2 restart sqlite-readonly-backend",
 		"build": "tsc"
 	},
 	"nodemonConfig": {
