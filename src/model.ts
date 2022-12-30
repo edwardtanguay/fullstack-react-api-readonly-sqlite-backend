@@ -66,7 +66,7 @@ export const getApiInstructions = () => {
 		color: yellow;
 	}
 </style>
-<h1>Flashcard Site API</h1>
+<h1>Flashcard Site API Documentation</h1>
 <ul>
 	<li><a href="flashcards">/flashcards</a> - all flashcards</li>
 	<li><a href="flashcards/2798">/flashcards/2798</a> - flashcard with id 2798</li>
