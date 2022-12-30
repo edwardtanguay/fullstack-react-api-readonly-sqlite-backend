@@ -6,6 +6,8 @@
 	"main": "index.js",
 	"scripts": {
 		"dev": "nodemon",
+		"start": "node dist/server.js",
+		"deploy": "git pull --no-rebase && npm i && npm run build && pm2 restart getajob007-backend",
 		"build": "tsc"
 	},
 	"nodemonConfig": {
